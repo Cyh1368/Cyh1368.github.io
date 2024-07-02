@@ -169,7 +169,6 @@ table, th, td {
 
 th, td {
   padding: 8px;
-  text-align: left;
 }
 
 /* Remove default list styles */
@@ -198,7 +197,7 @@ table {
 table th, table td {
   border: 1px solid #ddd;
   padding: 8px;
-  text-align: left;
+  text-align: center;
 }
 
 table th {
