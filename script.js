@@ -117,4 +117,28 @@ function toggleAbstract(id) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const emailIcon = document.querySelector('.email-icon');
+    const emailText = document.querySelector('.email-text');
+    const email = 'chengyou1368@gmail.com';
+
+    emailIcon.addEventListener('click', function(e) {
+        e.preventDefault();
+        this.classList.toggle('show-email');
+
+        // Copy email to clipboard
+        navigator.clipboard.writeText(email).then(() => {
+            // Optionally, provide feedback that the email was copied
+            alert('Email copied to clipboard!');
+        }).catch(err => {
+            console.error('Failed to copy email: ', err);
+        });
+    });
+
+    // Prevent the click on the email text from triggering the icon's click event
+    emailText.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+});
+
 showSlides(slideIndex); 
