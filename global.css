@@ -84,7 +84,15 @@ h6 {
   font-size: 14px;
 }
 p{
-  font-size: 20px;
+  font-size: 16px;
+}
+
+/* Style links */
+a {
+  color: #0366d6;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* Markdown-style lists */
@@ -95,14 +103,7 @@ ul, ol {
 
 li {
   margin: 10px 0;
-}
-
-/* Style links */
-a {
-  color: #0366d6;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 nav a {

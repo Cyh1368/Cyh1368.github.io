@@ -248,3 +248,39 @@ td{
   max-width: 300px;
   opacity: 1;
 }
+
+.navbar {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-item {
+  background-color: #f1f1f1;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.nav-item:hover, .nav-item.active {
+  background-color: #ddd;
+}
+.nav-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.nav-text {
+  font-size: 14px;
+}
+.content {
+  display: none;
+  padding: 20px;
+}
+.content.active {
+  display: block;
+}
