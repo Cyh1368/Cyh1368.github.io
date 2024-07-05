@@ -141,6 +141,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 800px) {
+  .tab-container {
+      width: 90%;
+  }
+}
+
 .name-header {
   text-align: center;
   padding: 20px 0;
@@ -166,7 +172,7 @@ body {
   cursor: pointer;
   padding: 10px 20px;
   transition: 0.3s;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
 }
 

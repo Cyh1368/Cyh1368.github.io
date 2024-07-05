@@ -142,14 +142,14 @@ const filesDictionary = {
     size: 762,
     date: '2023/11',
     group: 20
-  },
-  "ElsaDuet": {
-    title: 'Elsa Duet',
-    description: 'A piano-flute duet I remixed. See it on <a href="https://musescore.com/user/41685798/scores/13648249/piano-tutorial">Musescore</a>',
-    href: 'elsaduet.pdf',
-    size: 104,
-    date: '2023/12',
-    group: 40
+  // },
+  // "ElsaDuet": {
+  //   title: 'Elsa Duet',
+  //   description: 'A piano-flute duet I remixed. See it on <a href="https://musescore.com/user/41685798/scores/13648249/piano-tutorial">Musescore</a>',
+  //   href: 'elsaduet.pdf',
+  //   size: 104,
+  //   date: '2023/12',
+  //   group: 40
   },"PhySG20240105": {
     title: 'PhySG 2024/01/05',
     description: 'Problem set for 2024/01/05 Physics Study Group on the Vis-Viva equation and the Tsiolkovsky rocket equation.',
@@ -235,6 +235,13 @@ const filesDictionary = {
     size: 792, 
     date: '2024/02',
     group: 40
+  },"kepler4proof": {
+    title: '克卜勒定律的四種證明',
+    description: 'Four proofs of Kepler\'s first law.',
+    href: 'Kepler1st.pdf',
+    size: 792, 
+    date: '2024/06',
+    group: 10
   }
 };
 

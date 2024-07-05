@@ -15,8 +15,8 @@
             <h1>CYH</h1>
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <!-- <li><a href="resources.html">Resources</a></li>
+                <li><a href="projects.html">Projects</a></li> -->
             </ul>
         </nav>
 
@@ -32,7 +32,7 @@
                         <th>Title</th>
                         <th>Description</th>
                         <th>Date</th>
-                        <th>Size</th>
+                        <!-- <th>Size</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +40,7 @@
                         <td><a :href="'resources/' + file[1].href" target="_blank" v-html="file[1].title"></a></td>
                         <td v-html="file[1].description"></td>
                         <td>{{ file[1].date }}</td>
-                        <td>{{ file[1].size }} kb</td>
+                        <!-- <td>{{ file[1].size }} kb</td> -->
                     </tr>
                 </tbody>
             </table>
@@ -53,7 +53,7 @@
         const app = Vue.createApp({
             data() {
                 return {
-                    resourceDescription: "Here's a display of paperwork created by me! These include study group materials, Q&A documents, unpublished research and more. Some of them aren't serious at all - I just like to write LaTeX for fun sometimes!",
+                    resourceDescription: "Here's a display of paperwork created by me! These include study group materials, Q&A documents, unpublished research and more. Some of them aren't serious at all - I just like to write stuff for fun sometimes!",
                     groupedFiles: this.groupFilesByGroup(),
                 };
             },
