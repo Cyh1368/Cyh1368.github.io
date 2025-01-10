@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: I'm updating my personal website. Please come back in a few days. Thanks for your patience.
 
 profile:
   align: right
