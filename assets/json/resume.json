@@ -117,7 +117,7 @@
       "year": 2024,
       "releaseDate": "2024-07-03",
       "url": "https://jhss.scholasticahq.com/article/120809-force-model-and-experimental-analysis-of-a-simple-straw-pump",
-      "summary": "A low-cost centrifugal pump made by folding a straw into a triangle, immersing it into water and spinning it serves both as a DIY demonstration and as a pragmatic water sprinkler. A point-mass model is examined to describe the dynamics of water droplets. followed by correcting it with fluid dynamics. This research reveals insights into the design of fire sprinklers. (click URL for more)"
+      "summary": "A low-cost centrifugal pump made by folding a straw into a triangle, immersing it into water and spinning it serves both as a DIY demonstration and as a pragmatic water sprinkler. A point-mass model is examined to describe the dynamics of water droplets, followed by correcting it with fluid dynamics. This research reveals insights into the design of fire sprinklers. (click URL for more)"
     },
     {
       "name": "Analyzing the Membership Ratio of RR Lyrae Variables in Globular Clusters with Gaia Data",
@@ -135,9 +135,9 @@
       "level": "Research Applications",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Data Science",
-        "Numerical Physics Simulations",
-        "Basic Game Developement"
+        "Data science",
+        "Numerical physics simulations",
+        "Basic game developement"
       ]
     },
     {
@@ -145,9 +145,9 @@
       "level": "Self-study, Olympiad level",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Olymiad",
-        "Astrophysics Research",
-        "Young Physicists' Tournament Research"
+        "Olympiad problem-solving",
+        "Astrophysics research",
+        "Young Physicists' Tournament research"
       ]
     }
   ],
