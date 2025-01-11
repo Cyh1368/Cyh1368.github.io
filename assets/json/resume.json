@@ -75,6 +75,13 @@
   ],
   "certificates": [
     {
+      "name": "SAT 1550 (R&W 760, Math 790)",
+      "date": "2024-06-01",
+      "issuer": "College Board",
+      "url": "https://satsuite.collegeboard.org/sat",
+      "icon": "fa-solid fa-book"
+    },
+    {
       "name": "IELTS 8.0 / 9.0",
       "date": "2022-08-20",
       "issuer": "IELTS",
