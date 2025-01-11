@@ -15,7 +15,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I'm a high school senior based in Chiayi City, Taiwan, with a passion for **Physics** and a deep curiosity about the universe. Over the years, I've competed in multiple Olympiads and earned science fair awards in for my **Astrophysics** work on stellar evolution. Currently, I'm delving into **dark matter research**, focusing on the intriguing core & cusp problem.
+Hi there! I'm Cheng-You Ho (何承祐), a high school senior based in Chiayi City, Taiwan, with a passion for **Physics** and a deep curiosity about the universe. Over the years, I've competed in multiple Olympiads and earned science fair awards in for my **Astrophysics** work on stellar evolution. Currently, I'm delving into **dark matter research**, focusing on the intriguing core & cusp problem.
 
 In 2021, I founded **Delta Knowledge**, an educational social media platform dedicated to sharing science. Through our [YouTube channel](https://www.youtube.com/@deltaknowledge15) and [Instagram page](https://www.instagram.com/deltakphy/), I aim to make complex scientific concepts accessible and engaging for everyone.
 

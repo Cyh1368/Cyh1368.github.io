@@ -1,157 +1,159 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Cheng-You Ho (何承祐)",
+    "label": "Aspiring astrophysicist / engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "chengyou1368@gmail.com",
+    "url": "https://cyh1368.github.io/",
+    "summary": "An incoming freshman passionate about physics, engineering, and the universe.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "countryCode": "TW",
+      "region": "Chiayi City"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "LinkedIn",
+        "username": "cheng-you-ho-340708238",
+        "url": "https://tw.linkedin.com/in/cheng-you-ho-340708238/"
       }
     ]
   },
-  "work": [
-    {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
-    }
-  ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Class of Science, Chiayi Senior High School, Taiwan",
+      "location": "Chiayi City, Taiwan",
+      "url": "https://www.cysh.cy.edu.tw/index.php",
+      "area": "Accelerated STEM education",
+      "studyType": "High School",
+      "startDate": "2022-09",
+      "endDate": "",
+      "score": "95/100",
+      "courses": ["Class Rank 1 / 653 for 5 semesters"]
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "Silver Medal, 19th International Junior Science Olympiad (IJSO)",
+      "date": "2022-12",
+      "awarder": "IJSO Committee",
+      "url": "https://www.ijsoweb.org/",
+      "summary": "Globally ranked 26th. Selected as 1 of 6 national representatives at national selection camp. Self-studied high school physics, biology, and chemistry. "
+    },{
+      "title": "3rd Prize, 2024 Taiwan International Science Fair (TISF)",
+      "date": "2024-01",
+      "awarder": "National Taiwan Science Education Center",
+      "url": "https://twsf.ntsec.gov.tw/index.aspx?lang=2",
+      "summary": "Project 'Analyzing the Membership Ratio of RR Lyrae Stars in Globular Clusters' awarded 3rd prize in Physics and Astronomy, selected as national representative for MOSTRATEC."
+    },{
+      "title": "2-time Personal Award, Taiwan Young Physicists' Tournament",
+      "date": "2024-03",
+      "awarder": "Far Eastern F. Z. Hsu Foundation",
+      "url": "https://typt.phy.ntnu.edu.tw/",
+      "summary": "Chosen into IYPT (International Young Physicists' Tournament) selection camp for 2 consecutive years. Investigated unsolved physics phenomena as team leader."
+    },{
+      "title": "Harvard Book Prize",
+      "date": "2024-06",
+      "awarder": "Harvard Club of the Republic of China",
+      "url": "http://www.harvardclub.org.tw/english/Harvard%20Prize%20Book.htm",
+      "summary": "'awarded annually to an outstanding high school student in the junior year who demonstrates academic excellence and outstanding character, combined with achievement in extracurricular activities'."
+    },{
+      "title": "2nd Prize, 2024 MOSTRATEC International Science and Technology Fair",
+      "date": "2024-10",
+      "awarder": "MOSTRATEC Liberato",
+      "url": "https://mostratec.liberato.com.br/en/",
+      "summary": "Project 'Star Cluster Evolution — Revealed by Gaia' awarded 2nd prize in Earth and Planetary Sciences and Mathematics and Physics."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Delta Knowledge",
+      "summary": "Leads team of 4, dedicated to science content for 3+ years.",
+      "highlights": ["Content Creation", "Education", "Physics"],
+      "startDate": "2021-11",
+      "url": "https://www.youtube.com/@deltaknowledge15"
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "name": "IELTS 8.0 / 9.0",
+      "date": "2022-08-20",
+      "issuer": "IELTS",
+      "url": "https://ielts.org/",
+      "icon": "fa-solid fa-language",
+      "details": {
+        "scores": {
+          "reading": 9.0,
+          "listening": 9.0,
+          "writing": 7.0,
+          "speaking": 6.5
+        }
+      }
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "name": "Duolingo English Test 150/160",
+      "date": "2024-12-14",
+      "issuer": "Duolingo",
+      "url": "https://englishtest.duolingo.com/",
+      "icon": "fa-solid fa-language",
+      "details": {
+        "overallScore": 150,
+        "subScores": {
+          "literacy": 155,
+          "comprehension": 155,
+          "conversation": 150,
+          "production": 150
+        }
+      }
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Force Model and Experimental Analysis of a Simple Straw Pump",
+      "authors": "Ho, Cheng-You",
+      "publisher": "Journal of High School Science",
+      "volume": "8",
+      "number": "3",
+      "pages": "30–46",
+      "year": 2024,
+      "releaseDate": "2024-07-03",
+      "url": "https://jhss.scholasticahq.com/article/120809-force-model-and-experimental-analysis-of-a-simple-straw-pump",
+      "summary": "A low-cost centrifugal pump made by folding a straw into a triangle, immersing it into water and spinning it serves both as a DIY demonstration and as a pragmatic water sprinkler. A point-mass model is examined to describe the dynamics of water droplets. followed by correcting it with fluid dynamics. This research reveals insights into the design of fire sprinklers. (click URL for more)"
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Analyzing the Membership Ratio of RR Lyrae Variables in Globular Clusters with Gaia Data",
+      "authors": "Ho, Cheng-You",
+      "publisher": "Journal of Emerging Investigators",
+      "note": "In press",
+      "year": 2024,
+      "releaseDate": "2025",
+      "summary": "(In press.) In this research, membership ratios of RR Lyrae (RRL) stars in 20 globular clusters are calculated, and their correlation with cluster properties is highlighted. It is concluded that three factors play an essential role in deciding the ratio of RRL variables to the number of stars in the home cluster, which are the cluster age, cluster radius, and metallicity, listed in order of descending impact. It is hypothesized that the formation of RRL stars is correlated with tidal forces and properties of the home galaxy."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "Python",
+      "level": "Research Applications",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Data Science",
+        "Numerical Physics Simulations",
+        "Basic Game Developement"
+      ]
+    },
+    {
+      "name": "Physics",
+      "level": "Self-study, Olympiad level",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Olymiad",
+        "Astrophysics Research",
+        "Young Physicists' Tournament Research"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Mandarin",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -166,35 +168,28 @@
       "name": "Physics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Astrophysics",
+        "Olympiad",
+        "Engineering Applications"
       ]
     }
   ],
-  "references": [
+  "volunteer": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "organization": "Chiayi Chang Gung (長庚) Memorial Hospital",
+      "location": "Chiayi City, Taiwan",
+      "position": "Volunteer",
+      "startDate": "2023-08",
+      "endDate": "2024-01",
+      "summary": "Student volunteer during semester breaks."
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "organization": "Chiayi Senior High School",
+      "location": "Chiayi City, Taiwan",
+      "position": "Student Counselor / Mentor",
+      "startDate": "2023-08",
+      "endDate": "2024-06",
+      "summary": "Mentored students in STEM & English for 2 semesters. Guided freshmans on school projects & adjusting to school life."
     }
   ]
 }
