@@ -1,12 +1,31 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Delta Knowledge
+description: A mission to share science.
+img: assets/img/DeltaKlogo.png
 importance: 1
-category: work
+category: educational
 related_publications: true
 ---
+
+# Summary
+ In 2022, I launched the YouTube channel "Delta Knowledge" to inspire change
+ ("Delta") in viewers' understanding through engaging science videos. Initially, I
+ taught physics concepts using my iPad, drawing on knowledge from
+ undergraduate textbooks and my physics Olympiad preparation. Later, I
+ adopted PowerPoint animations to explain ideas more effectively. In spring
+ 2024, 3 friends joined the team, and we expanded to Instagram, designing
+ science infographics (posts) to share knowledge. Our content now spans topics
+ from physics, astronomy, to earth science and real-world events like the recent
+ earthquakes in Taiwan. This summer, we organized an infographics design
+ challenge, inviting audiences to create science posts. The event attracted
+ nationwide sponsors and successfully built a community among the
+ participants. The channel now has 12k+ followers and over 6 million views
+ combined across platforms. Moving forward, I aim to design more science
+ content of various forms on multiple platforms and host similar initiatives,
+ inspiring even more people to join us in the pursuit of science.
+
+# I'll add more soon!
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
