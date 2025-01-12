@@ -5,7 +5,7 @@
     "image": "",
     "email": "chengyou1368@gmail.com",
     "url": "https://cyh1368.github.io/",
-    "summary": "An incoming freshman passionate about physics, engineering, and the universe.",
+    "summary": "A high school senior passionate about physics, engineering, and the universe.",
     "location": {
       "countryCode": "TW",
       "region": "Chiayi City"
@@ -39,6 +39,12 @@
       "url": "https://www.ijsoweb.org/",
       "summary": "Globally ranked 26th. Selected as 1 of 6 national representatives at national selection camp. Self-studied high school physics, biology, and chemistry. "
     },{
+      "title": "Global Finalist, Asia Region Champion, Breakthrough Junior Challege 2023",
+      "date": "2023-09",
+      "awarder": "Breakthrough Prize Foundation",
+      "url": "https://breakthroughjuniorchallenge.org/winners/2023",
+      "summary": "2-minute physics video 'The Missing Neutrino' selected as a Global Top 15 Finalist. Popular Vote champion in the Asia Region."
+    },{
       "title": "3rd Prize, 2024 Taiwan International Science Fair (TISF)",
       "date": "2024-01",
       "awarder": "National Taiwan Science Education Center",
@@ -49,7 +55,7 @@
       "date": "2024-03",
       "awarder": "Far Eastern F. Z. Hsu Foundation",
       "url": "https://typt.phy.ntnu.edu.tw/",
-      "summary": "Chosen into IYPT (International Young Physicists' Tournament) selection camp for 2 consecutive years. Investigated unsolved physics phenomena as team leader."
+      "summary": "Chosen into IYPT (International Young Physicists' Tournament) selection camp for 2 consecutive years. Investigated open-ended physics phenomena as team leader."
     },{
       "title": "Harvard Book Prize",
       "date": "2024-06",
@@ -59,16 +65,57 @@
     },{
       "title": "2nd Prize, 2024 MOSTRATEC International Science and Technology Fair",
       "date": "2024-10",
-      "awarder": "MOSTRATEC Liberato",
+      "awarder": "Mostratec Liberato",
       "url": "https://mostratec.liberato.com.br/en/",
       "summary": "Project 'Star Cluster Evolution — Revealed by Gaia' awarded 2nd prize in Earth and Planetary Sciences and Mathematics and Physics."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "level": "Research Applications",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Data science",
+        "Numerical physics simulations",
+        "Basic game developement"
+      ]
+    },
+    {
+      "name": "Physics",
+      "level": "Self-study, Olympiad level",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Olympiad problem-solving",
+        "Astrophysics research",
+        "Young Physicists' Tournament research"
+      ]
+    },
+    {
+      "name": "Content Creation",
+      "level": "Team Leader",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Breakthrough Junior Challenge 2023 Finalist",
+        "3+ years Delta Knowledge experience",
+        "Educational YouTube videos / shorts",
+        "Educational Instagram posts / reels"
+      ]
+    },
+    {
+      "name": "Web Design",
+      "level": "Basic",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Experience in Node.js, PHP, MySQL development"
+      ]
     }
   ],
   "projects": [
     {
       "name": "Delta Knowledge",
       "summary": "Leads team of 4, dedicated to science content for 3+ years.",
-      "highlights": ["Content Creation", "Education", "Physics"],
+      "highlights": ["Content Creation", "Education", "Physics", "Science"],
       "startDate": "2021-11",
       "url": "https://www.youtube.com/@deltaknowledge15"
     }
@@ -134,28 +181,6 @@
       "year": 2024,
       "releaseDate": "2025",
       "summary": "(In press.) In this research, membership ratios of RR Lyrae (RRL) stars in 20 globular clusters are calculated, and their correlation with cluster properties is highlighted. It is concluded that three factors play an essential role in deciding the ratio of RRL variables to the number of stars in the home cluster, which are the cluster age, cluster radius, and metallicity, listed in order of descending impact. It is hypothesized that the formation of RRL stars is correlated with tidal forces and properties of the home galaxy."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Python",
-      "level": "Research Applications",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Data science",
-        "Numerical physics simulations",
-        "Basic game developement"
-      ]
-    },
-    {
-      "name": "Physics",
-      "level": "Self-study, Olympiad level",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Olympiad problem-solving",
-        "Astrophysics research",
-        "Young Physicists' Tournament research"
-      ]
     }
   ],
   "languages": [
