@@ -4,15 +4,17 @@ title: Delta Knowledge
 description: A mission to share science.
 img: assets/img/DeltaKlogo.png
 importance: 1
-category: educational
-related_publications: true
+category: active
+related_publications: false
 ---
 
-# Too Long; Didn't Read
+# Full PDF
+You can read more about Delta Knowledge in [this PDF](/assets/pdf/DeltaKnowledgePortfolio.pdf), which is a STEM portfolio submitted as a part of my application to the California Institute of Technology.
+
+# In short...
 Delta Knowledge is my [YouTube](https://www.youtube.com/@deltaknowledge15) and [Instagram](https://www.instagram.com/deltakphy/) platform dedicated to making science accessible and inspiring. Since its launch in 2022, I’ve led a team of four in creating engaging Instagram posts, producing high-quality videos, and hosting a design competition that successfully attracted sponsors. With our growing success, I’m excited to inspire even more people to join us on this journey of discovery and passion for science.
 
 ![Delta Knowledge Banner](/assets/img/dkbanner.png){:style="width:100%;"}
-
 
 # Summary
  In 2022, I launched the YouTube channel "Delta Knowledge" to inspire change
@@ -30,6 +32,3 @@ Delta Knowledge is my [YouTube](https://www.youtube.com/@deltaknowledge15) and [
  combined across platforms. Moving forward, I aim to design more science
  content of various forms on multiple platforms and host similar initiatives,
  inspiring even more people to join us in the pursuit of science.
-
-# I'll add more soon!
-Meanwhile, you can read more about Delta Knowledge [here](/assets/pdf/DeltaKnowledgePortfolio.pdf).
