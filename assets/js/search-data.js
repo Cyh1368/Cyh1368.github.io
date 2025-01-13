@@ -9,12 +9,12 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "Blog",
-          description: "",
+  },{id: "nav-projects-amp-experiences",
+          title: "Projects &amp; Experiences",
+          description: "A growing collection of my cool projects and experiences.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-publications",
           title: "Publications",
@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "A growing collection of my cool projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "Contact via LinkedIn and email preferred.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
+          },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
           },
         },{id: "post-the-first-post",
       
@@ -56,6 +56,16 @@ ninja.data = [{
           description: "A mission to share science.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/deltaknowledge/";
+            },},{id: "projects-2022-ijso-bogota",
+          title: '2022 IJSO @ Bogota',
+          description: "International Silver Medal 🥈",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ijso/";
+            },},{id: "projects-2024-tisf-taiwan",
+          title: '2024 TISF @ Taiwan',
+          description: "Never thought I&#39;d make it 🎆",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/tisf/";
             },},{
         id: 'social-discord',
         title: 'Discord',
