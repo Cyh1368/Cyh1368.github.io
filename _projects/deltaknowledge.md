@@ -9,7 +9,7 @@ related_publications: false
 ---
 
 # Full PDF
-You can read more about Delta Knowledge in [this PDF](/assets/pdf/DeltaKnowledgePortfolio.pdf), which is a STEM portfolio submitted as a part of my application to the California Institute of Technology.
+You can read more about Delta Knowledge in [this PDF](/assets/pdf/DeltaKnowledgePortfolio.pdf).
 
 # In short...
 Delta Knowledge is my [YouTube](https://www.youtube.com/@deltaknowledge15) and [Instagram](https://www.instagram.com/deltakphy/) platform dedicated to making science accessible and inspiring. Since its launch in 2022, I’ve led a team of four in creating engaging Instagram posts, producing high-quality videos, and hosting a design competition that successfully attracted sponsors. With our growing success, I’m excited to inspire even more people to join us on this journey of discovery and passion for science.

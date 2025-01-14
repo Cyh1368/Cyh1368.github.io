@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Projects & Experiences
+title: Projects / Experiences
 permalink: /projects/
 description: A growing collection of my cool projects and experiences.
 nav: true
-nav_order: 1
-display_categories: [active, memories]
+nav_order: 2
+display_categories: [active, archived]
 horizontal: false
 ---
 

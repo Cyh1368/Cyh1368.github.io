@@ -4,7 +4,7 @@ title: 2024 TISF @ Taiwan
 description: "Never thought I'd make it 🎆"
 img: assets/img/tisfaward.png
 importance: 1
-category: memories
+category: archived
 related_publications: false
 ---
 

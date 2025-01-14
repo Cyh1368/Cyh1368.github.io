@@ -4,7 +4,7 @@ title: 2022 IJSO @ Bogota
 description: International Silver Medal 🥈
 img: assets/img/ijsoflag.jpg
 importance: 1
-category: memories
+category: archived
 related_publications: false
 ---
 
