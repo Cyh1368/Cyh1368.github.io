@@ -9,8 +9,15 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects-amp-experiences",
-          title: "Projects &amp; Experiences",
+  },{id: "nav-cv-resume",
+          title: "CV / Resume",
+          description: "Contact via LinkedIn and email preferred.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-projects-experiences",
+          title: "Projects / Experiences",
           description: "A growing collection of my cool projects and experiences.",
           section: "Navigation",
           handler: () => {
@@ -22,20 +29,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
-          },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Contact via LinkedIn and email preferred.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
           },
         },{id: "post-the-first-post",
       
