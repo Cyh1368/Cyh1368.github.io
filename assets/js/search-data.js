@@ -54,6 +54,11 @@ ninja.data = [{
           description: "International Silver Medal 🥈",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ijso/";
+            },},{id: "projects-stem-notes",
+          title: 'STEM Notes',
+          description: "Physics Olympiad materials, study group handouts, and many more.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/physicsnotes/";
             },},{id: "projects-2024-tisf-taiwan",
           title: '2024 TISF @ Taiwan',
           description: "Never thought I&#39;d make it 🎆",
