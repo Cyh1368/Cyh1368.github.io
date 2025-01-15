@@ -4,7 +4,7 @@
     "image": "",
     "email": "chengyou1368@gmail.com",
     "url": "https://cyh1368.github.io/",
-    "summary": "A high school senior passionate about physics, engineering, and the universe.",
+    "summary": "A high school senior passionate about STEM and the universe, having won an international Olympiad, received multiple awards at international science fairs, and published STEM research papers.",
     "location": {
       "countryCode": "TW",
       "region": "Chiayi City"
@@ -71,17 +71,17 @@
   ],
   "skills": [
     {
-      "name": "Python",
+      "name": "Computer Science",
       "level": "Research Applications",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Data science",
+        "Data science applied to research",
         "Numerical physics simulations",
-        "Basic game developement"
+        "Primary language: Python"
       ]
     },
     {
-      "name": "Physics",
+      "name": "STEM",
       "level": "Self-study, Olympiad level",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
@@ -96,17 +96,9 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Breakthrough Junior Challenge 2023 Finalist",
-        "3+ years Delta Knowledge experience",
-        "Educational YouTube videos / shorts",
-        "Educational Instagram posts / reels"
-      ]
-    },
-    {
-      "name": "Web Design",
-      "level": "Basic",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Experience in Node.js, PHP, MySQL development"
+        "3+ years educational content experience",
+        "YouTube videos / shorts",
+        "Instagram posts / reels"
       ]
     }
   ],
