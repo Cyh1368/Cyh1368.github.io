@@ -37,31 +37,43 @@
       "awarder": "IJSO Committee",
       "url": "https://www.ijsoweb.org/",
       "summary": "Globally ranked 26th. Selected as 1 of 6 national representatives at national selection camp. Self-studied high school physics, biology, and chemistry. "
-    },{
+    },
+    {
       "title": "Global Finalist, Asia Region Champion, Breakthrough Junior Challege 2023",
       "date": "2023-09",
       "awarder": "Breakthrough Prize Foundation",
       "url": "https://breakthroughjuniorchallenge.org/winners/2023",
       "summary": "2-minute physics video 'The Missing Neutrino' selected as a Global Top 15 Finalist. Popular Vote champion in the Asia Region."
-    },{
+    },
+    {
       "title": "3rd Prize, 2024 Taiwan International Science Fair (TISF)",
       "date": "2024-01",
       "awarder": "National Taiwan Science Education Center",
       "url": "https://twsf.ntsec.gov.tw/index.aspx?lang=2",
       "summary": "Project 'Analyzing the Membership Ratio of RR Lyrae Stars in Globular Clusters' awarded 3rd prize in Physics and Astronomy, selected as national representative for MOSTRATEC."
-    },{
+    },
+    {
       "title": "2-time Personal Award, Taiwan Young Physicists' Tournament",
       "date": "2024-03",
       "awarder": "Far Eastern F. Z. Hsu Foundation",
       "url": "https://typt.phy.ntnu.edu.tw/",
       "summary": "Chosen into IYPT (International Young Physicists' Tournament) selection camp for 2 consecutive years. Investigated open-ended physics phenomena as team leader."
-    },{
+    },
+    {
+      "title": "Nationally Ranked 10th, Taiwan Physics Olympiad",
+      "date": "2024-04",
+      "awarder": "Taiwan Physics Olympiad Selection Committee",
+      "url": "https://tpmso.org/ipho/",
+      "summary": "Shortlisted for APhO team. Self-studied undergrad physics. Organized student-led national physics contest."
+    },
+    {
       "title": "Harvard Book Prize",
       "date": "2024-06",
       "awarder": "Harvard Club of the Republic of China",
       "url": "http://www.harvardclub.org.tw/english/Harvard%20Prize%20Book.htm",
       "summary": "'awarded annually to an outstanding high school student in the junior year who demonstrates academic excellence and outstanding character, combined with achievement in extracurricular activities'."
-    },{
+    },
+    {
       "title": "2nd Prize, 2024 MOSTRATEC International Science and Technology Fair",
       "date": "2024-10",
       "awarder": "Mostratec Liberato",
