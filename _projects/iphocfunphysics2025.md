@@ -9,7 +9,8 @@ related_publications: false
 ---
 
 # 2025 IPhOC Resources
-- 下載簡報：[蘊含規律的隨機漫步 Random Walk]({{ '/assets/pdf/RandomWalkPresentation20250729.pdf' | relative_url }})
+- 下載PDF：[蘊含規律的隨機漫步 Random Walk]({{ '/assets/pdf/RandomWalkPresentation20250729.pdf' | relative_url }})
+- 下載簡報：[蘊含規律的隨機漫步 Random Walk]({{ '/assets/pptx/IPhOCRandomWalk.pptx' | relative_url }})
 
 <iframe
   src="{{ '/assets/pdf/RandomWalkPresentation20250729.pdf' | relative_url }}"
