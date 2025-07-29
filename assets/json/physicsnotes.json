@@ -1,4 +1,11 @@
 {
+    "2025IPhOC": {
+      "title": "2025 IPhOC Fun Physics: Random Walk",
+      "description": "Materials for the Fun Physics lecture.",
+      "href": "/assets/pdf/RandomWalkPresentation20250729.pdf",
+      "date": "2025/07",
+      "group": 10
+    },
     "DriftingGasSystem": {
       "title": "Drifting Gas System",
       "description": "Translated Olympiad problem with my own solution, later posted as a discussion problem in Physoly discord server.",
