@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-the-first-post",
+        },{id: "post-iphoc-fun-physics",
+      
+        title: "IPhOC Fun Physics",
+      
+      description: "課堂資源 Resources",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/iphocfunphysics/";
+        
+      },
+    },{id: "post-the-first-post",
       
         title: "The First Post",
       
