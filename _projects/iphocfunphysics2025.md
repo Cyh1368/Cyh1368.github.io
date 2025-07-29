@@ -1,7 +1,7 @@
 ---
 layout: page
-title: STEM Notes
-description: Physics Olympiad materials, study group handouts, and many more.
+title: 2025 IPhOC Fun Physics
+description: Materials for the Fun Physics lecture.
 img: assets/img/physicsnotecoverimg.jpg
 importance: 1
 category: active
