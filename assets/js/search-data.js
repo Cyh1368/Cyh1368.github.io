@@ -74,9 +74,9 @@ ninja.data = [{
           description: "International Silver Medal 🥈",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ijso/";
-            },},{id: "projects-stem-notes",
-          title: 'STEM Notes',
-          description: "Physics Olympiad materials, study group handouts, and many more.",
+            },},{id: "projects-2025-iphoc-fun-physics",
+          title: '2025 IPhOC Fun Physics',
+          description: "Materials for the Fun Physics lecture.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iphocfunphysics2025/";
             },},{id: "projects-stem-notes",
