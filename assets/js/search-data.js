@@ -78,6 +78,11 @@ ninja.data = [{
           title: 'STEM Notes',
           description: "Physics Olympiad materials, study group handouts, and many more.",
           section: "Projects",handler: () => {
+              window.location.href = "/projects/iphocfunphysics2025/";
+            },},{id: "projects-stem-notes",
+          title: 'STEM Notes',
+          description: "Physics Olympiad materials, study group handouts, and many more.",
+          section: "Projects",handler: () => {
               window.location.href = "/projects/physicsnotes/";
             },},{id: "projects-2024-tisf-taiwan",
           title: '2024 TISF @ Taiwan',
