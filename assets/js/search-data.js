@@ -64,7 +64,12 @@ ninja.data = [{
           section: "News",},{id: "news-after-a-three-week-long-final-selection-camp-i-was-thrilled-to-be-chosen-for-the-national-asian-physics-olympiad-apho-team-looking-forward-to-the-international-competition-this-may",
           title: 'After a three-week-long final selection camp, I was thrilled to be chosen for...',
           description: "",
-          section: "News",},{id: "projects-delta-knowledge",
+          section: "News",},{id: "projects-第九屆天物盃詳解",
+          title: '第九屆天物盃詳解',
+          description: "Detailed solutions for the 9th Tian-Wu Physics Cup",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9thtianwucup/";
+            },},{id: "projects-delta-knowledge",
           title: 'Delta Knowledge',
           description: "A mission to share science.",
           section: "Projects",handler: () => {
