@@ -2,7 +2,7 @@
 layout: page
 title: 2025 IPhOC Fun Physics
 description: Materials for the Fun Physics lecture.
-img: assets/img/physicsnotecoverimg.jpg
+img: assets/img/2025iphocteaching.JPG
 importance: 1
 category: active
 related_publications: false

@@ -15,11 +15,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I'm Cheng-You Ho (何承祐), a high school senior based in Chiayi City, Taiwan, with a passion for **Physics** and a deep curiosity about the universe. Over the years, I've competed in multiple Olympiads and earned science fair awards in for my **Astrophysics** work on stellar evolution. Currently, I'm delving into **dark matter research**, focusing on the intriguing core & cusp problem.
+Hi there! I'm Cheng-You Ho (何承祐), a Yale freshman grown up in Chiayi City, Taiwan, with a passion for **physics** and a deep curiosity about the universe. Over the years, I've competed in multiple Olympiads and earned science fair awards in for my **astrophysics** work. I have done research on [stellar evolution](https://cyh1368.github.io/publications/), dark matter, carbon capture, etc. 
 
-In 2021, I founded **Delta Knowledge**, an educational social media platform dedicated to sharing science. Through our [YouTube channel](https://www.youtube.com/@deltaknowledge15) and [Instagram page](https://www.instagram.com/deltakphy/), I aim to make complex scientific concepts accessible and engaging for everyone.
-
-Beyond academics, I enjoy expressing myself through **music composition**, **video editing** (content creation), and playing **basketball**. Feel free to explore my page and connect with me!
+I enjoy expressing myself through **music**, **drawing**, **content creation** ([YouTube](https://www.youtube.com/@deltaknowledge15) & [Instagram](https://www.instagram.com/deltakphy/)), playing **basketball and table tennis**. Feel free to connect with me!
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
