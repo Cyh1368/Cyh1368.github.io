@@ -2,7 +2,7 @@
 layout: page
 title: 第九屆天物盃詳解
 description: Detailed solutions for the 9th Tian-Wu Physics Cup
-img: assets/img/tianwuteaching.JPG
+img: assets/img/9thtianwuproblem_compressed.jpg
 importance: 1
 category: active
 related_publications: false
@@ -21,7 +21,7 @@ related_publications: false
 
 # 詳解
 ## 找到手機了!!
-$$/latex$$
+$$\latex$$
 That was block latex test. Now for inline: $E=mc^2$.
 ## 懸崖有多高?
 ## 超導體守恆量
