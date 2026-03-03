@@ -67,6 +67,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-received-the-silver-medal-in-the-2025-international-physics-olympiad-ipho-in-paris-france-after-receiving-the-gold-medal-in-the-2025-asian-physics-olympiad-apho-in-dammam-saudi-arabia-i-m-happy-that-hard-work-has-paid-off-and-may-the-physics-journey-continue",
           title: 'I have received the Silver Medal in the 2025 International Physics Olympiad (IPhO)...',
           description: "",
+          section: "News",},{id: "news-our-team-won-first-place-in-the-alice-and-bob-challenge-at-mit-iquhack-2026-let-s-go-yquanbinators",
+          title: 'Our team won First Place in the Alice and Bob challenge at MIT...',
+          description: "",
           section: "News",},{id: "projects-第九屆天物盃詳解",
           title: '第九屆天物盃詳解',
           description: "Detailed solutions for the 9th Tian-Wu Physics Cup",
@@ -87,9 +90,9 @@ ninja.data = [{
           description: "Materials for the Fun Physics lecture.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/iphocfunphysics2025/";
-            },},{id: "projects-stem-notes",
-          title: 'STEM Notes',
-          description: "Physics Olympiad materials, study group handouts, and many more.",
+            },},{id: "projects-science-and-engineering-collection",
+          title: 'Science and Engineering Collection',
+          description: "Research projects, Olympiad handouts, and miscellaneous side-quests.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/physicsnotes/";
             },},{id: "projects-2024-tisf-taiwan",
