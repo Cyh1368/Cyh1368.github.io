@@ -1,4 +1,44 @@
 {
+    "Kompas": {
+      "title": "KOMPAS VC Research Draft",
+      "description": "Research draft for KOMPAS VC to be presented at COP 30.",
+      "href": "/assets/pdf/KOMPAS.pdf",
+      "date": "2025/11",
+      "group": 20
+    },
+
+    "CoreCusp": {
+      "title": "From Cusps to Cores: Quantifying the Impact of Stellar Feedback on Dark Matter Halos",
+      "description": "Research paper on a CFD numerical simulation ofthe core-cusp problem in astrophysics.",
+      "href": "/assets/pdf/CoreCuspReport20250428FinalTurnitin.pdf",
+      "date": "2025/05",
+      "group": 20
+    },
+
+    "GaiaPaper": {
+      "title": "Star Cluster Evolution — Revealed by Gaia",
+      "description": "Research paper on a novel pattern of stellar evolution revealed with the Gaia dataset. Presented at the 2024 Taiwan International Science Fair and the 2024 MOSTRATC International Science Fair in Brazil.",
+      "href": "/assets/pdf/StarClusterEvolutionRevealedbyGAIA.pdf",
+      "date": "2024/10",
+      "group": 20
+    },
+
+    "GaiaDataBook": {
+      "title": "Star Cluster Evolution — Revealed by Gaia: Project Data Book",
+      "description": "Documentation of the research process.",
+      "href": "/assets/pdf/StarClusterEvolutionDataBook.pdf",
+      "date": "2024/09",
+      "group": 20
+    },
+
+    "GaiaPoster": {
+      "title": "Star Cluster Evolution — Revealed by Gaia: Poster",
+      "description": "Poster for the 2024 MOSTRATC International Science Fair in Brazil.",
+      "href": "/assets/pdf/StarClusterEvolutionPoster.pdf",
+      "date": "2024/10",
+      "group": 20
+    },
+  
     "2025IPhOC": {
       "title": "2025 IPhOC Fun Physics: Random Walk",
       "description": "Materials for the Fun Physics lecture.",

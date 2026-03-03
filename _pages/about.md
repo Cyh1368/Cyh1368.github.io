@@ -15,9 +15,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi there! I'm Cheng-You Ho (何承祐), a Yale freshman grown up in Chiayi City, Taiwan, with a passion for **physics** and a deep curiosity about the universe. Over the years, I've competed in multiple Olympiads and earned science fair awards in for my **astrophysics** work. I have done research on [stellar evolution](https://cyh1368.github.io/publications/), dark matter, carbon capture, etc. 
+Hi, I'm Cheng-You Ho (何承祐), a Yale freshman from Taiwan interested in Physics, Computer Science, and Economics. 
+Before college, I was fascinated by astrophysics, in particular star clusters and dark matter. At Yale, I stepped into the world of quantum computing, and I will work on quantum machine learning under Prof. [Steven Girvin](https://physics.yale.edu/people/steven-girvin) this summer. Besides physics, I'm also into climate tech, specifically carbon markets and startups sourcing with [Yale Undergraduate Capital Partners](https://www.yucp.org/).
 
-I enjoy expressing myself through **music**, **drawing**, **content creation** ([YouTube](https://www.youtube.com/@deltaknowledge15) & [Instagram](https://www.instagram.com/deltakphy/)), playing **basketball and table tennis**. Feel free to connect with me!
+In my free time, I enjoy **ballroom dancing**, playing **spikeball & badminton**, **coding**, and meeting new people. A while ago, I had also been passionate about **content creation** on [YouTube](https://www.youtube.com/@deltaknowledge15) & [Instagram](https://www.instagram.com/deltakphy/). If you want to find me late at night, come to the Ezra Stiles buttery, where you'll find me busy making chicken quesadillas.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

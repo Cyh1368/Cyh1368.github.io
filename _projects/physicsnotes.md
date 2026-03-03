@@ -1,7 +1,7 @@
 ---
 layout: page
-title: STEM Notes
-description: Physics Olympiad materials, study group handouts, and many more.
+title: Science and Engineering Collection
+description: Research projects, Olympiad handouts, and miscellaneous side-quests.
 img: assets/img/physicsnotecoverimg.jpg
 importance: 1
 category: active
