@@ -20,6 +20,7 @@ related_publications: false
 </iframe>
 
 # [詳解 (PDF)]({{ '/assets/projects/9thtianwucup/9th天物盃P19_P23詳解_20250803.pdf' | relative_url }})
+
 <iframe
   src="{{ '/assets/projects/9thtianwucup/9th天物盃P19_P23詳解_20250803.pdf' | relative_url }}"
   width="1000"

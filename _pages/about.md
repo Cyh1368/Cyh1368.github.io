@@ -2,24 +2,24 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle:
 
 profile:
   align: right
-  image: splash-prof-pic.jpg
+  image: splash-prof-pic.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: 
+  more_info:
 
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Cheng-You Ho (何承祐). I'm an Applied Math undergraduate at Yale. I won the silver medal at the 2025 International Physics Olympiad as well as the gold medal at the Asian Physics Olympiad in the same year. 
+Hi, I'm Cheng-You Ho (何承祐). I'm an Applied Math undergraduate at Yale. I won the silver medal at the 2025 International Physics Olympiad as well as the gold medal at the Asian Physics Olympiad in the same year.
 
-I'm working on graph-based LLM memory systems at the [Graph and Geometric Learning lab](https://graph-and-geometric-learning.github.io) with Professor Ying. I'm familiar with semantic search, memory write, retrieval ranking, and LLM benchmarking. 
+I'm working on graph-based LLM memory systems at the [Graph and Geometric Learning lab](https://graph-and-geometric-learning.github.io) with Professor Ying. I'm familiar with semantic search, memory write, retrieval ranking, and LLM benchmarking.
 
-Previously, I had worked on quantum machine learning with Professor [Girvin](https://physics.yale.edu/people/steven-girvin). 
+Previously, I had worked on quantum machine learning with Professor [Girvin](https://physics.yale.edu/people/steven-girvin).
 
 I enjoy [photography](https://www.instagram.com/chengyou.photos/) in my free time!
 

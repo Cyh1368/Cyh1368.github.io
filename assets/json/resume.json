@@ -86,21 +86,13 @@
       "name": "Computer Science",
       "level": "Research Applications",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Data science applied to research",
-        "Numerical physics simulations",
-        "Primary language: Python"
-      ]
+      "keywords": ["Data science applied to research", "Numerical physics simulations", "Primary language: Python"]
     },
     {
       "name": "STEM",
       "level": "Self-study, Olympiad level",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Olympiad problem-solving",
-        "Astrophysics research",
-        "Young Physicists' Tournament research"
-      ]
+      "keywords": ["Olympiad problem-solving", "Astrophysics research", "Young Physicists' Tournament research"]
     },
     {
       "name": "Content Creation",
@@ -202,11 +194,7 @@
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Astrophysics",
-        "Olympiad",
-        "Engineering Applications"
-      ]
+      "keywords": ["Astrophysics", "Olympiad", "Engineering Applications"]
     }
   ],
   "volunteer": [

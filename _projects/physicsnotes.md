@@ -73,7 +73,6 @@ Items marked with `(中文)` are in Mandarin Chinese, while the remainder are in
     .catch(error => console.error('Error fetching notes:', error));
 </script>
 
-
 <style>
   table {
     width: 100%;

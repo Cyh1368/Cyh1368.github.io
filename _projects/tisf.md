@@ -13,7 +13,8 @@ related_publications: false
 ![TISF Name Wall](/assets/img/tisfnamewall.jpg){:style="width:50%;"}
 
 # In Short...
-I presented my astrophysics project *Analyzing the Membership Ratio of RR Lyrae Stars in Globular Clusters* in the 2024 Taiwan International Science Fair, and it wasn't after I got to the venue that I learned excellent projects could be selected to represent Taiwan at other countries. After three interesting days of presenting my project to professors, students, and TISF participants from all around the world, I was awarded 3rd Prize in Physics and astronomy + selected to present my project again at the MOSTRATEC science fair in Brazil.
+
+I presented my astrophysics project _Analyzing the Membership Ratio of RR Lyrae Stars in Globular Clusters_ in the 2024 Taiwan International Science Fair, and it wasn't after I got to the venue that I learned excellent projects could be selected to represent Taiwan at other countries. After three interesting days of presenting my project to professors, students, and TISF participants from all around the world, I was awarded 3rd Prize in Physics and astronomy + selected to present my project again at the MOSTRATEC science fair in Brazil.
 
 <br>
 
