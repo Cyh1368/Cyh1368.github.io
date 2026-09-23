@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic_compressed.jpg
+  image: splash-prof-pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
 
@@ -15,10 +15,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm Cheng-You Ho (何承祐), a Yale freshman from Taiwan interested in Physics, Computer Science, and Economics. 
-Before college, I was fascinated by astrophysics, in particular star clusters and dark matter. At Yale, I stepped into the world of quantum computing, and I will work on quantum machine learning under Prof. [Steven Girvin](https://physics.yale.edu/people/steven-girvin) this summer. Besides physics, I'm also into climate tech, specifically carbon markets and startups sourcing with [Yale Undergraduate Capital Partners](https://www.yucp.org/).
+Hi, I'm Cheng-You Ho (何承祐). I'm an Applied Math undergraduate at Yale. I won the silver medal at the 2025 International Physics Olympiad as well as the gold medal at the Asian Physics Olympiad in the same year. 
 
-In my free time, I enjoy **ballroom dancing**, playing **spikeball & badminton**, **coding**, and meeting new people. A while ago, I had also been passionate about **content creation** on [YouTube](https://www.youtube.com/@deltaknowledge15) & [Instagram](https://www.instagram.com/deltakphy/). If you want to find me late at night, come to the Ezra Stiles buttery, where you'll find me busy making chicken quesadillas.
+I'm working on graph-based LLM memory systems at the [Graph and Geometric Learning lab](https://graph-and-geometric-learning.github.io) with Professor Ying. I'm familiar with semantic search, memory write, retrieval ranking, and LLM benchmarking. 
+
+Previously, I had worked on quantum machine learning with Professor [Girvin](https://physics.yale.edu/people/steven-girvin). 
+
+I enjoy [photography](https://www.instagram.com/chengyou.photos/) in my free time!
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
