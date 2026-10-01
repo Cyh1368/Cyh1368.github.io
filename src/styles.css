@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: dark;
+  --background: #14100d;
+  --foreground: #fff;
+  --muted: #b7b7b7;
+  --chrome-offset: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--background);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "EB Garamond", Georgia, "Times New Roman", "Songti TC", "Noto Serif TC", "PingFang TC", serif;
+  letter-spacing: 0;
+}
+
+.site-header {
+  position: fixed;
+  top: var(--chrome-offset);
+  left: var(--chrome-offset);
+  right: var(--chrome-offset);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 28px;
+}
+
+.site-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  min-height: 28px;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.site-links a,
+.site-links a:visited {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.site-links a:hover,
+.site-links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.site-shell {
+  width: min(100% - 48px, 1040px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+h1,
+p,
+h2,
+ul {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 500;
+  line-height: 0.95;
+}
+
+p {
+  max-width: 34rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.profile-details {
+  display: grid;
+  gap: 18px;
+  max-width: 40rem;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.profile-details h2 {
+  margin-bottom: 4px;
+  color: var(--foreground);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-details ul {
+  padding-left: 1.2em;
+}
+
+.profile-details a,
+.profile-details a:visited {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.profile-details a:hover,
+.profile-details a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+@media (max-width: 560px) {
+  :root {
+    --chrome-offset: 18px;
+  }
+
+  .site-links {
+    gap: 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Language switching: show only the active language's spans */
+html[data-lang="en"] [lang="zh"],
+html[data-lang="zh"] [lang="en"] {
+  display: none;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 14px;
+  font-size: 1.05rem;
+}
+
+.lang-switch button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.lang-switch button:hover,
+.lang-switch button:focus-visible {
+  color: var(--foreground);
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-links {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
+
+.morphing {
+  opacity: 0.92;
+}
+
+/* Name and tagline aligned to the right */
+.site-shell h1,
+.site-shell > p {
+  align-self: flex-end;
+  text-align: right;
+}
