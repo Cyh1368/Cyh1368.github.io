@@ -19,7 +19,10 @@
   });
 
   function read(span) {
-    return span.innerHTML.replace(/\s+/g, " ").replace(/ ?<br\s*\/?> ?/gi, "\n").trim();
+    var tmp = document.createElement("div");
+    tmp.innerHTML = span.innerHTML.replace(/<br\s*\/?>/gi, "\u0000");
+    // [ \t\r\n] instead of \s so non-breaking spaces survive
+    return tmp.textContent.replace(/[ \t\r\n]+/g, " ").replace(/ ?\u0000 ?/g, "\n").trim();
   }
 
   function render(span, str) {
@@ -70,7 +73,7 @@
       var out = "";
       for (var i = 0; i < n; i++) {
         var c = newStr.charAt(i);
-        if (c === "\n" || c === " ") out += c;
+        if (c === "\n" || c === " " || c === "\u00a0") out += c;
         else if (p < start[i]) out += oldStr.charAt(i) || "";
         else if (p < end[i]) out += pick(to);
         else out += c;
