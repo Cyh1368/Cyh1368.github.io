@@ -39,7 +39,7 @@
     return p.charAt((Math.random() * p.length) | 0);
   }
 
-  var DURATION = 900;
+  var DURATION = 450;
   var running = new Map();
 
   function morph(pair, from, to, delay) {
@@ -95,7 +95,7 @@
 
     pairs.forEach(function (pair, idx) {
       render(pair.el[lang], pair.text[lang]);
-      if (animate && !reduced && from !== lang) morph(pair, from, lang, idx * 35);
+      if (animate && !reduced && from !== lang) morph(pair, from, lang, idx * 17);
     });
   }
 
