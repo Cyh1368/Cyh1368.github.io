@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,33 +9,49 @@
     <link rel="stylesheet" href="./src/styles.css">
   </head>
   <body>
+    <!--
+      TEXT EDITING GUIDE
+      Every piece of text is written twice, side by side:
+        <span lang="en">English text</span>
+        <span lang="zh">中文文字</span>
+      Edit the lang="en" span for English and the lang="zh" span for Chinese.
+    -->
     <header class="site-header">
+      <nav class="lang-switch" aria-label="Language">
+        <button type="button" data-set-lang="en">English</button>
+        <button type="button" data-set-lang="zh">中文</button>
+      </nav>
       <nav class="site-links" aria-label="Profile links">
+        <a href="./src/Cheng_You_Ho_Resume-Sep.pdf" target="_blank" rel="noopener noreferrer"><span lang="en">Resume</span><span lang="zh">履歷</span></a>
         <a href="https://www.linkedin.com/in/cheng-you-ho-340708238" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/Cyh1368" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.instagram.com/chengyou.photos/" target="_blank" rel="noopener noreferrer">Photography</a>
-        <a href="mailto:chengyou1368@gmail.com">Email</a>
+        <a href="https://www.instagram.com/chengyou.photos/" target="_blank" rel="noopener noreferrer"><span lang="en">Photography</span><span lang="zh">攝影</span></a>
+        <a href="mailto:cheng-you.ho@yale.edu"><span lang="en">Email</span><span lang="zh">電子郵件</span></a>
       </nav>
     </header>
     <main class="site-shell" aria-label="Cheng-You Ho">
-      <h1>Cheng-You Ho</h1>
-      <p>Yale Applied Math. IPhO Silver Medalist. LLM memory researcher.</p>
+      <h1><span lang="en">Cheng-You Ho</span><span lang="zh">何承祐</span></h1>
+      <p>
+        <span lang="en">Yale Applied Math. IPhO Silver Medalist. LLM memory researcher.</span>
+        <span lang="zh">耶魯大學應用數學系。國際物理奧林匹亞銀牌。大型語言模型記憶系統研究者。</span>
+      </p>
       <section class="profile-details" aria-label="Background">
         <div>
-          <h2>Current</h2>
+          <h2><span lang="en">Current</span><span lang="zh">現在</span></h2>
           <ul>
-            <li><a href="https://graph-and-geometric-learning.github.io" target="_blank" rel="noopener noreferrer">Graph-based LLM memory systems at Yale Graph and Geometric Learning Lab</a></li>
+            <li><a href="https://graph-and-geometric-learning.github.io" target="_blank" rel="noopener noreferrer"><span lang="en">Graph-based LLM memory systems at Yale Graph and Geometric Learning Lab</span><span lang="zh">耶魯大學圖與幾何學習實驗室：基於圖的大型語言模型記憶系統</span></a></li>
           </ul>
         </div>
         <div>
-          <h2>Previous</h2>
+          <h2><span lang="en">Previous</span><span lang="zh">過去</span></h2>
           <ul>
-            <li><a href="https://physics.yale.edu/people/steven-girvin" target="_blank" rel="noopener noreferrer">Quantum machine learning research with Prof. Steven Girvin at Yale</a></li>
-            <li>Silver medal, 2025 International Physics Olympiad</li>
-            <li>Gold medal, 2025 Asian Physics Olympiad</li>
+            <li><a href="https://physics.yale.edu/people/steven-girvin" target="_blank" rel="noopener noreferrer"><span lang="en">Quantum machine learning research with Prof. Steven Girvin at Yale</span><span lang="zh">於耶魯大學與 Steven Girvin 教授進行量子機器學習研究</span></a></li>
+            <li><span lang="en">Silver medal, 2025 International Physics Olympiad</span><span lang="zh">2025 年國際物理奧林匹亞銀牌</span></li>
+            <li><span lang="en">Gold medal, 2025 Asian Physics Olympiad</span><span lang="zh">2025 年亞洲物理奧林匹亞金牌</span></li>
           </ul>
         </div>
       </section>
     </main>
+    <script src="./src/main.js"></script>
   </body>
 </html>
