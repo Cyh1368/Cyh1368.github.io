@@ -134,7 +134,7 @@
   }
 
   function stamp(cx, cy, amp) {
-    var r = 5;
+    var r = 2.5;
     for (var y = Math.max(1, cy - r * 2); y < Math.min(H - 1, cy + r * 2); y++) {
       for (var x = Math.max(1, cx - r * 2); x < Math.min(W - 1, cx + r * 2); x++) {
         var d2 = ((x - cx) * (x - cx) + (y - cy) * (y - cy)) / (r * r);
@@ -149,7 +149,7 @@
       for (var x = 1; x < W - 1; x++) {
         var i = y * W + x;
         var avg = (cur[i - 1] + cur[i + 1] + cur[i - W] + cur[i + W]) * 0.25;
-        vel[i] = (vel[i] + (avg - cur[i]) * 0.9) * 0.975;
+        vel[i] = (vel[i] + (avg - cur[i]) * 0.9) * 0.88;
       }
     }
     for (var j = 0; j < cur.length; j++) {
@@ -191,7 +191,7 @@
           stamp(
             Math.round((pmx + dx * t) / CELL) + 1,
             Math.round((pmy + dy * t) / CELL) + 1,
-            Math.min(speed * 0.012, 0.9) / n * 2
+            Math.min(speed * 0.01, 0.7) / n * 2
           );
         }
         idleSince = ts;
@@ -200,7 +200,7 @@
     pmx = mx; pmy = my;
     var e = step();
     draw();
-    if (e < 0.0004 && ts - idleSince > 1500) { awake = false; return; }
+    if (e < 0.0004 && ts - idleSince > 500) { awake = false; return; }
     requestAnimationFrame(loop);
   }
 

@@ -201,3 +201,10 @@ html[data-lang="zh"] [lang="en"] {
 .morphing {
   opacity: 0.92;
 }
+
+/* Name and tagline aligned to the right */
+.site-shell h1,
+.site-shell > p {
+  align-self: flex-end;
+  text-align: right;
+}
