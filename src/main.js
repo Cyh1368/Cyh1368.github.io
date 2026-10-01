@@ -19,7 +19,7 @@
   });
 
   function read(span) {
-    return span.innerHTML.replace(/<br\s*\/?>/gi, "\n").replace(/\s+/g, " ").replace(/ ?\n ?/g, "\n").trim();
+    return span.innerHTML.replace(/\s+/g, " ").replace(/ ?<br\s*\/?> ?/gi, "\n").trim();
   }
 
   function render(span, str) {
