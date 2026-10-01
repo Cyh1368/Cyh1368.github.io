@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap");
 
+@font-face {
+  font-family: "Noto Serif TC Subset";
+  src: url("./fonts/NotoSerifTC-subset.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
   --background: #14100d;
@@ -22,7 +29,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: "EB Garamond", Georgia, "Times New Roman", "Songti TC", "Noto Serif TC", "PingFang TC", serif;
+  font-family: "EB Garamond", Georgia, "Times New Roman", "Noto Serif TC Subset", "Songti TC", "Noto Serif TC", "PingFang TC", serif;
   letter-spacing: 0;
 }
 
