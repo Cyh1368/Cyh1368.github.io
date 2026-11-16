@@ -8,15 +8,19 @@
   // Each translatable element holds an en span and a zh span. Read both texts
   // once (<br> becomes "\n"), then animate whichever span becomes visible.
   var pairs = [];
-  document.querySelectorAll('span[lang="en"]').forEach(function (en) {
-    var zh = en.nextElementSibling;
-    while (zh && zh.getAttribute("lang") !== "zh") zh = zh.nextElementSibling;
-    if (!zh) return;
-    pairs.push({
-      el: { en: en, zh: zh },
-      text: { en: read(en), zh: read(zh) },
+  function collectPairs() {
+    pairs = [];
+    document.querySelectorAll('span[lang="en"]').forEach(function (en) {
+      var zh = en.nextElementSibling;
+      while (zh && zh.getAttribute("lang") !== "zh") zh = zh.nextElementSibling;
+      if (!zh) return;
+      pairs.push({
+        el: { en: en, zh: zh },
+        text: { en: read(en), zh: read(zh) },
+      });
     });
-  });
+  }
+  collectPairs();
 
   function read(span) {
     var tmp = document.createElement("div");
@@ -90,7 +94,11 @@
     var from = root.dataset.lang || "en";
     root.dataset.lang = lang;
     root.lang = langs[lang];
-    document.title = lang === "zh" ? "何承祐" : "Cheng-You Ho";
+    var pageTitle = document.querySelector(".research-shell")
+      ? (lang === "zh" ? "研究 | " : "Research | ")
+      : document.querySelector(".contacts-shell")
+        ? (lang === "zh" ? "聯絡 | " : "Contacts | ") : "";
+    document.title = pageTitle + (lang === "zh" ? "何承祐" : "Cheng-You Ho");
     document.querySelectorAll("[data-set-lang]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.dataset.setLang === lang));
     });
@@ -112,4 +120,201 @@
       if (b.dataset.setLang !== root.dataset.lang) setLang(b.dataset.setLang, true);
     });
   });
+  /* Reveal abstracts from the top, keeping the citation anchored in place. */
+  function setupAbstracts() {
+    document.querySelectorAll(".research-work").forEach(function (work) {
+      var summary = work.querySelector("summary");
+      var animation = null;
+      var expanded = work.open;
+
+      summary.addEventListener("click", function (event) {
+        // A citation link still opens the paper instead of toggling the abstract.
+        if (event.target.closest("a") || reduced || !work.animate) return;
+        event.preventDefault();
+        expanded = !expanded;
+
+        var startHeight = work.getBoundingClientRect().height;
+        if (animation) {
+          animation.cancel();
+          animation = null;
+        }
+        work.open = true;
+        work.style.height = "auto";
+        var endHeight = expanded
+          ? work.getBoundingClientRect().height
+          : summary.getBoundingClientRect().height;
+        work.dataset.expanded = String(expanded);
+        work.style.overflow = "hidden";
+        work.style.height = startHeight + "px";
+
+        animation = work.animate(
+          [{ height: startHeight + "px" }, { height: endHeight + "px" }],
+          { duration: 440, easing: "cubic-bezier(0.25, 0.8, 0.25, 1)", fill: "forwards" }
+        );
+        animation.onfinish = function () {
+          work.open = expanded;
+          work.style.height = "";
+          work.style.overflow = "";
+          delete work.dataset.expanded;
+          animation.cancel();
+          animation = null;
+        };
+      });
+    });
+  }
+  setupAbstracts();
+
+  /* Keep the shared header in place while local pages morph into each other. */
+  var navigating = false;
+  var pageCache = new Map();
+  var bundledPages = window.SITE_PAGES || {};
+  var filePreview = window.location.protocol === "file:";
+  var activePage = pageKey(new URL(window.location.href));
+  var pendingNavigation = null;
+
+  function pageKey(url) {
+    return url.pathname.split("/").pop() || "index.html";
+  }
+
+  function routeURL() {
+    var url = new URL(window.location.href);
+    if (filePreview) {
+      var route = url.hash.slice(1);
+      var name = route === "home" ? "index.html" : route + ".html";
+      if (bundledPages[name]) return new URL("./" + name, url);
+    }
+    return url;
+  }
+
+  function visibleTextNodes(element) {
+    var nodes = [];
+    var walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) {
+      var node = walker.currentNode;
+      if (node.textContent.trim() && node.parentElement.getClientRects().length) {
+        nodes.push(node);
+      }
+    }
+    return nodes;
+  }
+
+  function scramblePage(element, previousText) {
+    var nodes = visibleTextNodes(element);
+    var originals = nodes.map(function (node) { return node.textContent; });
+    var duration = 520;
+    var start = performance.now();
+    element.setAttribute("aria-busy", "true");
+    return new Promise(function (resolve) {
+      function frame(now) {
+        var progress = Math.min(1, (now - start) / duration);
+        nodes.forEach(function (node, index) {
+          var text = originals[index];
+          node.textContent = Array.from(text).map(function (character, i, chars) {
+            if (/\s/.test(character) || progress === 1) return character;
+            var threshold = 0.2 + (i / Math.max(1, chars.length)) * 0.55;
+            if (progress > threshold) return character;
+            if (progress < 0.12 && previousText[index]) {
+              return Array.from(previousText[index])[i] || pick(root.dataset.lang);
+            }
+            return pick(/[\u3400-\u9fff]/.test(character) ? "zh" : "en");
+          }).join("");
+        });
+        if (progress < 1) requestAnimationFrame(frame);
+        else {
+          element.removeAttribute("aria-busy");
+          resolve();
+        }
+      }
+      frame(start);
+    });
+  }
+
+  async function navigate(url, addHistory) {
+    if (navigating) {
+      pendingNavigation = { url: url, addHistory: addHistory };
+      return;
+    }
+    navigating = true;
+    try {
+      var key = pageKey(url);
+      var html = bundledPages[key] || pageCache.get(url.pathname);
+      if (!html) {
+        var response = await fetch(url.href);
+        if (!response.ok) throw new Error("Page unavailable");
+        html = await response.text();
+        pageCache.set(url.pathname, html);
+      }
+      var next = new DOMParser().parseFromString(html, "text/html");
+      var nextMain = next.querySelector("main");
+      if (!nextMain) throw new Error("Missing page content");
+      var current = document.querySelector("main");
+      var previousText = visibleTextNodes(current).map(function (node) { return node.textContent; });
+      var morphDone = Promise.resolve();
+      function swap() {
+        current.replaceWith(nextMain);
+        document.querySelectorAll(".site-links a[data-page]").forEach(function (link) {
+          if (pageKey(new URL(link.href)) === key) link.setAttribute("aria-current", "page");
+          else link.removeAttribute("aria-current");
+        });
+        collectPairs();
+        setLang(root.dataset.lang, false);
+        setupAbstracts();
+        window.scrollTo({ top: 0, behavior: "instant" });
+        activePage = key;
+        if (addHistory) {
+          // File URLs cannot reliably rewrite paths with pushState. Keep local
+          // previews on the same file and store the selected page in its hash.
+          var destination = filePreview
+            ? "#" + (key === "index.html" ? "home" : key.replace(/\.html$/, ""))
+            : url.href;
+          history.pushState(null, "", destination);
+        }
+        if (!reduced) morphDone = scramblePage(nextMain, previousText);
+      }
+      if (!reduced && document.startViewTransition) {
+        var transition = document.startViewTransition(swap);
+        await transition.finished;
+      } else {
+        // Cross-fade on browsers without the View Transition API.
+        if (!reduced && current.animate) {
+          await current.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 140, fill: "forwards" }).finished;
+        }
+        swap();
+        if (!reduced && nextMain.animate) {
+          await nextMain.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 260 }).finished;
+        }
+      }
+      await morphDone;
+      nextMain.setAttribute("tabindex", "-1");
+      nextMain.focus({ preventScroll: true });
+    } catch (error) {
+      window.location.assign(url.href);
+    } finally {
+      navigating = false;
+      if (pendingNavigation) {
+        var pending = pendingNavigation;
+        pendingNavigation = null;
+        if (pageKey(pending.url) !== activePage) navigate(pending.url, pending.addHistory);
+      }
+    }
+  }
+
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest("a[data-page]");
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || link.target || link.hasAttribute("download")) return;
+    var url = new URL(link.href);
+    if (url.origin !== window.location.origin) return;
+    event.preventDefault();
+    if (pageKey(url) !== activePage) navigate(url, true);
+  });
+
+  window.addEventListener("popstate", function () {
+    var url = routeURL();
+    if (pageKey(url) !== activePage) navigate(url, false);
+  });
+
+  // A local preview refreshed at #contacts should still display Contacts.
+  var initialRoute = routeURL();
+  if (pageKey(initialRoute) !== activePage) navigate(initialRoute, false);
+
 })();

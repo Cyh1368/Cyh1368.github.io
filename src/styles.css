@@ -51,7 +51,7 @@ body {
   justify-content: flex-end;
   gap: 18px;
   min-height: 28px;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem + 4px);
   line-height: 1;
   white-space: nowrap;
 }
@@ -97,7 +97,7 @@ h1 {
 p {
   max-width: 34rem;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: calc(1rem + 4px);
   line-height: 1.6;
 }
 
@@ -107,14 +107,14 @@ p {
   max-width: 40rem;
   margin-top: 14px;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: calc(1rem + 4px);
   line-height: 1.5;
 }
 
 .profile-details h2 {
   margin-bottom: 4px;
   color: var(--foreground);
-  font-size: 1rem;
+  font-size: calc(1rem + 4px);
   font-weight: 500;
 }
 
@@ -141,7 +141,7 @@ p {
 
   .site-links {
     gap: 12px;
-    font-size: 1rem;
+    font-size: calc(1rem + 4px);
   }
 }
 
@@ -154,7 +154,7 @@ html[data-lang="zh"] [lang="en"] {
 .lang-switch {
   display: flex;
   gap: 14px;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem + 4px);
 }
 
 .lang-switch button {
@@ -214,7 +214,7 @@ html[data-lang="zh"] [lang="en"] {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: calc(0.9rem + 4px);
     line-height: 1.4;
   }
 
@@ -223,12 +223,166 @@ html[data-lang="zh"] [lang="en"] {
     gap: 16px;
     max-width: none;
     margin-top: 4px;
-    font-size: 0.8rem;
+    font-size: calc(0.8rem + 4px);
     line-height: 1.35;
   }
 
   .profile-details h2 {
     margin-bottom: 2px;
-    font-size: 0.85rem;
+    font-size: calc(0.85rem + 4px);
   }
+}
+
+/* Research keeps the same quiet typography as the profile. */
+.research-shell {
+  justify-content: flex-start;
+  overflow-anchor: none;
+  padding-block: 140px 64px;
+  gap: 40px;
+}
+
+.research-list {
+  width: 100%;
+  max-width: 48rem;
+  display: grid;
+  gap: 26px;
+  font-size: calc(1.1rem + 4px);
+  line-height: 1.6;
+}
+
+.research-work summary {
+  position: relative;
+  padding-left: 24px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.research-work summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-work summary::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.65em;
+  border-block: 4px solid transparent;
+  border-left: 5px solid var(--muted);
+  transform-origin: 2px 4px;
+  transition: transform 300ms ease;
+}
+
+.research-work[open]:not([data-expanded="false"]) summary::before {
+  transform: rotate(90deg);
+}
+
+.research-work a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.research-author {
+  color: #e4d49a;
+}
+
+.research-work a:hover,
+.research-work a:focus-visible,
+.site-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.research-work summary:focus-visible {
+  outline: 1px solid var(--muted);
+  outline-offset: 5px;
+}
+
+.research-abstract {
+  max-width: none;
+  margin: 12px 0 0 24px;
+  color: var(--muted);
+  font-size: calc(1rem + 4px);
+  line-height: 1.65;
+}
+
+.abstract-label {
+  font-style: italic;
+}
+
+@media (max-width: 560px) {
+  .research-shell {
+    padding-top: 180px;
+    gap: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-work summary::before {
+    transition: none;
+  }
+}
+
+/* Animate page content independently so the navigation stays steady. */
+.site-shell {
+  view-transition-name: page-content;
+}
+
+.site-shell h1 {
+  view-transition-name: page-heading;
+}
+
+::view-transition-group(page-content),
+::view-transition-group(page-heading) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*) {
+    animation-duration: 0s;
+  }
+}
+
+/* Leave room for the larger navigation text on tablet-sized screens. */
+@media (min-width: 561px) and (max-width: 960px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-links {
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+}
+
+.contact-links {
+  display: grid;
+  gap: 18px;
+  font-size: calc(1.1rem + 4px);
+  line-height: 1.6;
+}
+
+.contact-links a {
+  width: fit-content;
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.contacts-shell {
+  padding-block: 140px 64px;
+  gap: 40px;
+}
+
+/* Navigation focuses main for assistive technology, but its viewport-sized
+   browser outline should not appear as blue lines along the page edges. */
+.site-shell[tabindex="-1"]:focus {
+  outline: none;
 }
