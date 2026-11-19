@@ -21,13 +21,17 @@
         <button type="button" data-set-lang="en">English</button>
         <button type="button" data-set-lang="zh">中</button>
       </nav>
-      <nav class="site-links" aria-label="Profile links">
-        <a href="./index.html" aria-current="page" data-page><span lang="en">Home</span><span lang="zh">首頁</span></a>
-        <a data-page href="./research.html"><span lang="en">Research</span><span lang="zh">研究</span></a>
-        <a href="./contacts.html" data-page><span lang="en">Contacts</span><span lang="zh">聯絡</span></a>
-        <a href="https://github.com/Cyh1368" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.instagram.com/chengyou.photos/" target="_blank" rel="noopener noreferrer"><span lang="en">Photography</span><span lang="zh">攝影</span></a>
-      </nav>
+      <div class="site-nav">
+        <input class="nav-check" id="site-menu-toggle" type="checkbox" tabindex="-1" aria-controls="site-menu" aria-expanded="false">
+        <label class="nav-toggle" for="site-menu-toggle"><span lang="en">Menu</span><span lang="zh">選單</span></label>
+        <nav class="site-links" id="site-menu" aria-label="Profile links">
+            <a href="./index.html" aria-current="page" data-page><span lang="en">Home</span><span lang="zh">首頁</span></a>
+            <a data-page href="./research.html"><span lang="en">Research</span><span lang="zh">研究</span></a>
+            <a href="./contacts.html" data-page><span lang="en">Contacts</span><span lang="zh">聯絡</span></a>
+            <a href="https://github.com/Cyh1368" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/chengyou.photos/" target="_blank" rel="noopener noreferrer"><span lang="en">Photography</span><span lang="zh">攝影</span></a>
+          </nav>
+      </div>
     </header>
     <main class="site-shell" aria-label="Cheng-You Ho">
       <h1><span lang="en">Cheng-You Ho</span><span lang="zh">何承祐</span></h1>
