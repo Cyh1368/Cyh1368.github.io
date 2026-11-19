@@ -250,10 +250,16 @@ html[data-lang="zh"] [lang="en"] {
   }
 
   .site-shell:not(.research-shell):not(.contacts-shell) {
-    justify-content: safe center;
-    padding-top: 76px;
+    justify-content: flex-start;
+    padding-top: 104px;
     padding-bottom: 28px;
   }
+}
+
+/* Homepage tagline items stay whole; the line breaks between them. */
+.keep {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .morphing {

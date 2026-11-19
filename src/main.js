@@ -31,10 +31,19 @@
   }
 
   function render(span, str) {
-    span.innerHTML = str
+    var html = str
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/\n/g, "<br>");
+    // The homepage tagline is three phrases joined by ．. On a phone, keep each
+    // phrase intact and break only between them. Desktop still fits on one line.
+    if (narrow.matches && span.getAttribute("lang") === "zh" && html.indexOf("．") !== -1) {
+      html = html.split("．").map(function (part, i, parts) {
+        var dot = i < parts.length - 1 ? "．" : "";
+        return '<span class="keep">' + part + dot + "</span>";
+      }).join("");
+    }
+    span.innerHTML = html;
   }
 
   // Keep phrases together unless a non-breaking run is wider than the screen.
