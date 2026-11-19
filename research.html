@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cheng-You Ho">
+    <title>Research | Cheng-You Ho</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📡</text></svg>">
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="lang-switch" aria-label="Language">
+        <button type="button" data-set-lang="en">English</button>
+        <button type="button" data-set-lang="zh">中</button>
+      </nav>
+      <div class="site-nav">
+        <input class="nav-check" id="site-menu-toggle" type="checkbox" tabindex="-1" aria-controls="site-menu" aria-expanded="false">
+        <label class="nav-toggle" for="site-menu-toggle"><span lang="en">Menu</span><span lang="zh">選單</span></label>
+        <nav class="site-links" id="site-menu" aria-label="Profile links">
+            <a href="./index.html" data-page><span lang="en">Home</span><span lang="zh">首頁</span></a>
+            <a data-page href="./research.html" aria-current="page"><span lang="en">Research</span><span lang="zh">研究</span></a>
+            <a href="./contacts.html" data-page><span lang="en">Contacts</span><span lang="zh">聯絡</span></a>
+            <a href="https://github.com/Cyh1368" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.instagram.com/chengyou.photos/" target="_blank" rel="noopener noreferrer"><span lang="en">Photography</span><span lang="zh">攝影</span></a>
+          </nav>
+      </div>
+    </header>
+    <main class="site-shell research-shell" aria-label="Research">
+      <h1><span lang="en">Research</span><span lang="zh">研究</span></h1>
+      <section class="research-list" aria-label="Research publications">
+        <details class="research-work">
+          <summary><a href="https://arxiv.org/abs/2607.13105" target="_blank" rel="noopener noreferrer"><span class="research-author">Ho, C.-Y.</span>, Wang, D., Shi, S., Luo, J., &amp; Ng, H. (2026). Biased-noise quantum Reed-Solomon codes and a Tornado concatenation for cat qubits. <i>arXiv</i>, 2607.13105.</a></summary>
+          <p class="research-abstract"><span class="abstract-label">Abstract (abridged).</span> Dissipative cat qubits strongly suppress one type of Pauli error, allowing quantum error correction to focus on the dominant bit-flip channel. This work constructs a bit-flip-only quantum Reed-Solomon code by binary-expanding a classical [7, 3, 5] code into a [[21, 9, 6]] code. A Tornado architecture concatenates it with distance-three repetition codes, producing a [[63, 9, 18]] code with a two-stage decoder. Monte Carlo simulations yield a logical error rate of approximately 0.0053 at a physical bit-flip rate of 0.1, outperforming both parent codes. At low physical error rates, the logical error rate scales as the sixth power of the physical rate. The paper presents the construction, circuit and error models, scaling analysis, and limitations associated with overhead and single-shot assumptions.</p>
+        </details>
+        <details class="research-work">
+          <summary><a href="./src/StarClusterEvolutionRevealedbyGAIA.pdf" target="_blank" rel="noopener noreferrer"><span class="research-author">Ho, C.-Y.</span> (2024). <i>Star cluster evolution – revealed by GAIA</i>. MOSTRATEC International Science Fair report.</a></summary>
+          <p class="research-abstract"><span class="abstract-label">Abstract (abridged).</span> Using Gaia Data Release 3, this study estimates the membership ratio of RR Lyrae variable stars in 20 globular clusters and examines its relationship with cluster age, radius, and metallicity. Regression analysis identifies age as the most strongly correlated factor, followed by radius and metallicity. Age and metallicity correlate negatively with the RR Lyrae membership ratio, while radius correlates positively. Comparisons of individual clusters suggest that RR Lyrae formation may also depend on cluster formation history and the host galaxy. The findings highlight cluster radius as an additional factor in understanding star cluster evolution and motivate further investigation of tidal forces and galactic environments.</p>
+        </details>
+        <details class="research-work">
+          <summary><a href="https://jhss.scholasticahq.com/article/120809-force-model-and-experimental-analysis-of-a-simple-straw-pump" target="_blank" rel="noopener noreferrer"><span class="research-author">Ho, C.-Y.</span> (2024). Force model and experimental analysis of a simple straw pump. <i>Journal of High School Science, 8</i>(3), 30–46.</a></summary>
+          <p class="research-abstract"><span class="abstract-label">Abstract.</span> A low-cost centrifugal pump made by folding a straw into a triangle, immersing it into water and spinning it serves both as a DIY demonstration and as a pragmatic water sprinkler. A point-mass model is first examined to describe the dynamics of water droplets, with corrections due to Bernoulli’s effect, surface tension and viscosity subsequently considered, where surface tension is found negligible. Effects of straw diameter, immersion depth, rotation angular velocity and tilt angle are discussed experimentally, which fit the predictions of the corrected point-mass model. The dependence of aerodynamic drag on droplet radii is discussed. For practical applications, the effect of pᵢₙᵢₜ (pressure at the inlet) is evaluated, and it is also predicted that there exist conditions for maximum droplet range and exit velocity, providing insight into optimizing the setup for lawn or fire sprinklers.</p>
+        </details>
+      </section>
+    </main>
+    <script src="./src/pages.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

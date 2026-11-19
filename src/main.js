@@ -2,6 +2,7 @@
   var root = document.documentElement;
   var langs = { en: "en", zh: "zh-Hant" };
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var narrow = window.matchMedia("(max-width: 640px)");
 
   /* ---------- text morph ---------- */
 
@@ -34,6 +35,18 @@
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/\n/g, "<br>");
+  }
+
+  // Keep phrases together unless a non-breaking run is wider than the screen.
+  function softenNbsp() {
+    if (!narrow.matches) return;
+    var limit = document.documentElement.clientWidth - 8;
+    document.querySelectorAll("span[lang]").forEach(function (span) {
+      if (span.classList.contains("morphing")) return;
+      if (span.getBoundingClientRect().right <= limit) return;
+      if (!/&nbsp;|\u00a0/.test(span.innerHTML)) return;
+      span.innerHTML = span.innerHTML.replace(/&nbsp;|\u00a0/g, " ");
+    });
   }
 
   var POOL = {
@@ -72,6 +85,7 @@
         render(span, newStr);
         span.classList.remove("morphing");
         running.delete(span);
+        softenNbsp();
         return;
       }
       var out = "";
@@ -108,18 +122,50 @@
       render(pair.el[lang], pair.text[lang]);
       if (animate && !reduced && from !== lang) morph(pair, from, lang, idx * 17);
     });
+    softenNbsp();
   }
 
   var saved = null;
   try { saved = localStorage.getItem("lang"); } catch (e) {}
   if (!saved) saved = (navigator.language || "").toLowerCase().indexOf("zh") === 0 ? "zh" : "en";
   setLang(saved, false);
+  narrow.addEventListener("change", function () {
+    setLang(root.dataset.lang || "en", false);
+  });
 
   document.querySelectorAll("[data-set-lang]").forEach(function (b) {
     b.addEventListener("click", function () {
       if (b.dataset.setLang !== root.dataset.lang) setLang(b.dataset.setLang, true);
     });
   });
+
+  /* Phones use a disclosure for the same links. Close it once the choice is made. */
+  var siteNav = document.querySelector(".site-nav");
+  var navToggle = document.querySelector(".nav-check");
+  if (siteNav && navToggle) {
+    function closeNav() {
+      navToggle.checked = false;
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+    function syncNav() {
+      navToggle.tabIndex = narrow.matches ? 0 : -1;
+      if (!narrow.matches) closeNav();
+    }
+    navToggle.addEventListener("change", function () {
+      navToggle.setAttribute("aria-expanded", navToggle.checked ? "true" : "false");
+    });
+    document.addEventListener("click", function (event) {
+      if (navToggle.checked && !siteNav.contains(event.target)) closeNav();
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") closeNav();
+    });
+    siteNav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) closeNav();
+    });
+    narrow.addEventListener("change", syncNav);
+    syncNav();
+  }
   /* Reveal abstracts from the top, keeping the citation anchored in place. */
   function setupAbstracts() {
     document.querySelectorAll(".research-work").forEach(function (work) {
