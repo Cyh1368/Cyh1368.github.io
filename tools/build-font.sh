@@ -1,6 +1,6 @@
 #!/bin/sh
 # Rebuild src/fonts/NotoSerifTC-subset.woff2 so it covers every character used
-# on the page. Run this after editing any Chinese text in index.html or the
+# on the page. Run this after editing any Chinese text in the HTML pages or the
 # glyph pool in src/main.js.
 #
 # Needs: pip install fonttools brotli
@@ -13,7 +13,8 @@ if [ ! -f "$SRC" ]; then
 fi
 python3 - <<'PY' > /tmp/font-chars.txt
 import re
-text = open("index.html", encoding="utf-8").read() + open("src/main.js", encoding="utf-8").read()
+pages = ["index.html", "research.html", "contacts.html", "src/main.js"]
+text = "".join(open(name, encoding="utf-8").read() for name in pages)
 chars = sorted(set(text) | set(chr(c) for c in range(0x20, 0x7f)))
 print("".join(chars), end="")
 PY
