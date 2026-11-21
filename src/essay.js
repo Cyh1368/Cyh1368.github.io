@@ -30,8 +30,8 @@
     arp: ["40%", "64%", "24%"],
     masson: ["68%", "36%", "26%"],
     cezanne: ["36%", "14%", "28%"],
-    matisse: ["6%", "24%", "22%"],
-    picasso: ["10%", "52%", "22%"],
+    matisse: ["6%", "6%", "22%"],
+    picasso: ["10%", "56%", "22%"],
   };
   var lineOrder = ["cezanne", "matisse", "picasso", "masson", "arp"];
 
@@ -52,6 +52,7 @@
       if (!works[id].year) return;
       var figure = document.createElement("figure");
       figure.dataset.work = id;
+      if (id === "matisse") figure.classList.add("cap-above");
       var img = document.createElement("img");
       img.src = works[id].src;
       img.alt = "";

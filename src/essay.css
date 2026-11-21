@@ -77,6 +77,16 @@
   line-height: 1.45;
 }
 
+.prose p.essay-note,
+.prose p.essay-note.is-active {
+  margin: 18px 0 0;
+  padding-left: 0;
+  border-left: 0;
+  color: var(--muted);
+  font-size: 1.12rem;
+  font-style: italic;
+}
+
 .prose {
   margin-top: 42px;
 }
@@ -102,6 +112,12 @@
   border-left-color: #e4d49a;
 }
 
+.prose p.object-heading,
+.prose p.object-heading.is-active {
+  padding-left: 1.7em;
+  border-left: 0;
+}
+
 .object-list {
   margin: 0 0 1.6em;
   padding: 0;
@@ -111,7 +127,7 @@
 .object-list li {
   position: relative;
   margin: 0 0 0.7em;
-  padding-left: 2em;
+  padding-left: 1.7em;
   border-left: 1px solid transparent;
   cursor: default;
 }
@@ -259,6 +275,17 @@
   text-align: center;
 }
 
+.constellation:not(.is-line) figure.cap-above {
+  display: flex;
+  flex-direction: column;
+}
+
+.constellation:not(.is-line) figure.cap-above figcaption {
+  order: -1;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
 .constellation .year {
   display: none;
   color: #e4d49a;
@@ -356,7 +383,8 @@
 
   .prose > .essay-kicker,
   .prose > h1,
-  .prose > .essay-byline {
+  .prose > .essay-byline,
+  .prose > .essay-note {
     order: -1;
   }
 
