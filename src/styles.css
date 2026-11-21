@@ -560,7 +560,7 @@ html[data-lang="zh"] [lang="en"] {
 }
 
 .writing-card img {
-  grid-row: 1 / span 3;
+  grid-row: 1 / -1;
   width: 108px;
   height: 136px;
   object-fit: cover;
@@ -574,12 +574,6 @@ html[data-lang="zh"] [lang="en"] {
   background: #efeae2;
 }
 
-.writing-kicker {
-  color: #e4d49a;
-  font-size: calc(0.95rem + 2px);
-  line-height: 1.3;
-}
-
 .writing-title {
   font-size: calc(1.28rem + 2px);
   line-height: 1.25;
@@ -589,6 +583,12 @@ html[data-lang="zh"] [lang="en"] {
   color: var(--muted);
   font-size: calc(1rem + 2px);
   font-style: italic;
+  line-height: 1.4;
+}
+
+.writing-note {
+  color: var(--muted);
+  font-size: calc(0.98rem + 1px);
   line-height: 1.4;
 }
 
