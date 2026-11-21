@@ -17,7 +17,7 @@ jobs:
         run: |
           python3 tools/build_page_cache.py
           mkdir _site
-          cp -r index.html research.html contacts.html src _site/
+          cp -r index.html research.html contacts.html writings.html writings src _site/
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -9,7 +9,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parent.parent
 pages = {}
-for name in ('index.html', 'research.html', 'contacts.html'):
+for name in ('index.html', 'research.html', 'contacts.html', 'writings.html'):
     html = (root / name).read_text()
     main = re.search(r'<main\b[\s\S]*?</main>', html)
     if not main:

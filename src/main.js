@@ -3,6 +3,7 @@
   var langs = { en: "en", zh: "zh-Hant" };
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var narrow = window.matchMedia("(max-width: 640px)");
+  var menu = window.matchMedia("(max-width: 820px)");
 
   /* ---------- text morph ---------- */
 
@@ -117,8 +118,13 @@
     var from = root.dataset.lang || "en";
     root.dataset.lang = lang;
     root.lang = langs[lang];
-    var pageTitle = document.querySelector(".research-shell")
+    var essay = document.querySelector(".essay-shell");
+    var pageTitle = essay
+      ? ((lang === "zh" ? essay.getAttribute("data-title-zh") : essay.getAttribute("data-title-en")) + " | ")
+      : document.querySelector(".research-shell")
       ? (lang === "zh" ? "研究 | " : "Research | ")
+      : document.querySelector(".writings-shell")
+        ? (lang === "zh" ? "寫作 | " : "Writings | ")
       : document.querySelector(".contacts-shell")
         ? (lang === "zh" ? "聯絡 | " : "Contacts | ") : "";
     document.title = pageTitle + (lang === "zh" ? "何承祐" : "Cheng-You Ho");
@@ -157,8 +163,8 @@
       navToggle.setAttribute("aria-expanded", "false");
     }
     function syncNav() {
-      navToggle.tabIndex = narrow.matches ? 0 : -1;
-      if (!narrow.matches) closeNav();
+      navToggle.tabIndex = menu.matches ? 0 : -1;
+      if (!menu.matches) closeNav();
     }
     navToggle.addEventListener("change", function () {
       navToggle.setAttribute("aria-expanded", navToggle.checked ? "true" : "false");
@@ -172,7 +178,7 @@
     siteNav.addEventListener("click", function (event) {
       if (event.target.closest("a")) closeNav();
     });
-    narrow.addEventListener("change", syncNav);
+    menu.addEventListener("change", syncNav);
     syncNav();
   }
   /* Reveal abstracts from the top, keeping the citation anchored in place. */
